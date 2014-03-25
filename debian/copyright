@@ -1,0 +1,25 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: everpad
+Source: https://github.com/nvbn/everpad
+
+Files: *
+Copyright: 2007-2014 Vladimir Iakovlev <nvbn.rm@gmail.com>
+License: MIT/Expat
+ <Put the license of the package here indented by 1 space>
+ <This follows the format of Description: lines in control file>
+ .
+ <Including paragraphs>
+
+
+Files: thrift/*
+Copyright: Apache Software Foundation (ASF)
+License: Apache License, Version 2.0
+
+Files: evernote/*
+Copyright: Evernote
+License: unknown
+
+Files: debian/*
+Copyright: 2014 Emilien Klein <emilien+debian@klein.st>
+License: same-as-upstream
+ Same as Everpad itself (see above).
