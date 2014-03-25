@@ -1,0 +1,5 @@
+everpad (2.5.4-1) unstable; urgency=low
+
+  * Initial release (Closes: #739637)
+
+ -- Emilien Klein <emilien+debian@klein.st>  Tue, 25 Mar 2014 07:12:06 +0100
