@@ -3,19 +3,19 @@ Section: editors
 Priority: optional
 Maintainer: Python Applications Packaging Team <python-apps-team@lists.alioth.debian.org>
 Uploaders: Emilien Klein <emilien+debian@klein.st>
-Build-Depends: debhelper (>= 8.0.0),
+Build-Depends: debhelper (>= 9.0.0),
                python (>= 2.4),
                python-support,
                python-pyside.qtcore,
                python-pyside.qtgui,
                python-dbus,
                python-beautifulsoup,
-               sni-qt,
                python-pysqlite2,
                python-setuptools,
                python-keyring,
                python-webpy,
-               python-sqlalchemy
+               python-sqlalchemy,
+               python-thrift
 Standards-Version: 3.9.5
 Homepage: https://github.com/nvbn/everpad
 Vcs-Svn: svn://anonscm.debian.org/python-apps/packages/everpad/trunk/
@@ -23,13 +23,12 @@ Vcs-Browser: http://anonscm.debian.org/viewvc/python-apps/packages/everpad/trunk
 
 Package: everpad
 Architecture: all
-Depends: ${shlibs:Depends},
-         ${misc:Depends},
+Depends: ${misc:Depends},
+         ${python:Depends},
          python-pyside.qtcore,
          python-pyside.qtgui,
          python-dbus,
          python-beautifulsoup,
-         sni-qt,
          python-pysqlite2,
          python-keyring,
          python-support,
@@ -40,10 +39,11 @@ Depends: ${shlibs:Depends},
          python-pyside.qtwebkit,
          python-html2text,
          gtk2-engines-pixbuf,
-         python-regex
+         python-regex,
+         python-thrift
 Description: Evernote client for GNU/Linux
- Everpad allows to interact with the Evernote service right from your desktop.
- It supports notes, tags, notebooks, resources, places and en-* tags.
+ Everpad allows one to interact with the Evernote service right from your
+ desktop. It supports notes, tags, notebooks, resources, places and en-* tags.
  .
- Evernote does not provide a client for GNU/Linux. Everpad is one of the 3rd party
- clients that provide a native client for that service.
+ Evernote does not provide a client for GNU/Linux. Everpad is one of the 3rd
+ party clients that provide a native client for that service.
