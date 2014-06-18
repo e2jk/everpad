@@ -8,5 +8,10 @@
 export DH_OPTIONS
 
 
+override_dh_clean:
+	dh_clean
+	rm -rf *.egg-info
+
+
 %:
-	dh $@ 
+	dh $@ --with python2
